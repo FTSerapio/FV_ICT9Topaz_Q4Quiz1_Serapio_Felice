@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0/dist/css/bootstrap.min.css">
+	<title>Quiz 1</title>
+
+	<style>
+		#pfp{
+			height: 50px;
+			width: 50px;
+			margin-top: 10px;
+		}
+		#login-container{
+			height: 400px;
+			width: 300px;
+			background-color: white;
+			margin-top: 100px;
+		}
+		body{
+			background-color: #cfadde;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<!--put your login form inside a container-->
+	<div id="login-container">
+		<div class="col-md-10">
+			<!--profil picture here-->
+			<img id="pfp"  src="https://cdn.discordapp.com/attachments/1010378734215364660/1235523308951179294/Screenshot_20240502_172727_Google_Play_services.jpg?ex=6634ae3f&is=66335cbf&hm=0bd111e029cfaaf76d3c4787b6ed1363f9dd74e884b11a56f43d36c2bf986786&" class="rounded-circle"><br><br>
+
+		<form action="mainpage.html" class="form-group">
+			<label id="email"><!--Id should be the same in line 62--></label><br>
+			<input type="text" class="form-control bg-light" name="email" id="email"><br>
+			<!--copy line 48 to 50 to add input box for password then apply necessary changes-->
+			<label id="password"><!--Id should be the same in line 62--></label><br>
+			<input type="text" class="form-control bg-light" name="password" id="password"><br>
+			<!--choose a color of a button, then link it to the mainpage-->
+			<a href="mainpage.html"><button class="btn btn-dark">login</button></a>
+			<a href="#"><button type="reset" class="btn btn-light">cancel</button></a>
+		</form>
+		</div>
+	</div>
+</center>
+	<script type="text/javascript">
+		//ids in line 62 and 63 should be the same as the ids in the forms above
+		document.getElementById("email").innerHTML = "Email"; //this is the label for email imput box
+		document.getElementById("password").innerHTML = "Password";
+	</script>
+
+</body>
+</html>
